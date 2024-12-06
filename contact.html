@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Cedar Knob Soap Company</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel='stylesheet' href='css/styles.css'>
+
+		<!-- contact.php
+			Author:				Dalia Vargas Cruz
+			Date:				2024-12-01
+			Last revised:		2024-12-06
+			Purpose:			Contact page for Cedar Knob Soap Company
+		-->
+			
+</head>
+<body>
+	<header>
+		<div class="logo-title">
+			<img src="images/logo.png" alt="Cedar Knob Logo" class="logo">
+			<h1>Cedar Knob Soap Company</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="wrapper">
+		<section>
+			<h1>Contact</h1>
+			<form id="contactForm" action="php/processForm.php" method="post"> <!-- This is where I'm not sure what to replace the text with -->
+				<label for="first">First Name: </label>
+				<input id="first" type="text" name="firstname" placeholder="First Name" autofocus required>
+
+				<label for="last">Last Name: </label>
+				<input id="last" type="text" name="lastname" placeholder="Last Name">
+
+				<label for="email">Email: </label>
+				<input id="email" type="email" name="email" placeholder="Email Address">
+
+				<label for="phone">Phone: </label>
+				<input id="phone" type="text" name="phone" placeholder="Cell, Telephone">
+
+				<label for="comments">Questions: </label>
+				<textarea id="comments" name="comments" rows="7" placeholder="Have any questions about our products? Ask us here!"></textarea>
+
+				<li><a href='https://www.facebook.com/people/Cedar-Knob-Soap-Company/100087757104514/'>Follow us on Facebook!</a></li>
+				
+				<div class="buttons">
+					<input id="submitBtn" type="submit" value="Submit">
+				</div>
+			</form>
+		</section>
+	</div>
+
+	<script src="/js/w3c.js"></script>
+</body>
+</html>
